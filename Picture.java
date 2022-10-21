@@ -29,7 +29,7 @@ public class Picture
      * Draw this picture.
      */
     public void draw()
-    {
+    {       
         campo = new Square();
         campo.makeVisible();
         campo.changeColor("green");
@@ -64,7 +64,15 @@ public class Picture
         sun.makeVisible();
         sun.slowMoveVertical(-250);
     }
-
+    
+    /**
+     * Atardecer
+     */
+    public void Atardecer()
+    {
+        sun.slowMoveVertical(270);
+    }
+    
     /**
      * Change this picture to black/white display
      */
